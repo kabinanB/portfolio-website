@@ -1,0 +1,262 @@
+/* ----------------------------
+   styles.css (updated)
+   ---------------------------- */
+
+   html {
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 10px 10px 0.05px 10px;
+}
+
+.link {
+    text-decoration: none;
+    text-shadow: none;
+    font-size: 18px;  
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 20px 30px 20px;
+}
+
+
+.quality {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 5px 10px 15px 10px;
+}
+
+.header {
+    background-color: rgba(240, 74, 74, 0.893);
+    padding: 40px 40px 50px 40px;
+    text-align: center;
+}
+
+.about {
+    margin-top: -10px;
+    font-size: 1rem;         /* same as .exp-box p */
+    line-height: 1.4;        /* match the paragraph spacing */
+    color: #555;             /* same text color as .exp-box p */
+    font-weight: normal;     /* override “lighter” so it matches */
+    text-align: left;
+}
+
+/* “About Me” */
+.second {
+    background-color: aliceblue;
+    font-size: 20px;
+    display: grid;               /* keep grid so place-items works */
+    place-items: start center; 
+    height: 200px; 
+    padding: 40px 40px 20px 40px;
+    text-align: center;
+    margin: 0 auto; 
+                 /* center if you ever constrain width */
+}
+
+/* “Skills” */
+.third {
+    background-color: rgba(255, 222, 222, 0.94);
+    font-size: 20px;
+    display: grid;               /* keep grid so place-items works */
+    place-items: start center; 
+    height: 450px; 
+    padding: 40px 40px 50px 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* “Experience” */
+.forth {
+    background-color: aliceblue;
+    font-size: 20px;
+    display: grid;               /* keep grid so place-items works */
+    place-items: start center; 
+    height: 700px; 
+    padding: 40px 40px 50px 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* “Education” */
+.fifth {
+    background-color: rgba(255, 222, 222, 0.94);
+    font-size: 20px;
+    display: grid;               /* keep grid so place-items works */
+    place-items: start center; 
+    height: 500px; 
+    padding: 40px 40px 50px 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* Flexbox for “Skills” logos */
+.languages {
+    display: flex;
+    flex-wrap: wrap;            /* wrap onto multiple lines if needed */
+    justify-content: center;    /* center horizontally */
+    gap: 1.5rem;                /* space between boxes */
+    padding: 2rem;              /* some padding around the group */
+}
+
+.language-box {
+    flex: 0 1 150px;            /* basis of 150px, but shrink/grow as needed */
+    display: flex;
+    flex-direction: column;     /* stack logo on top of text */
+    align-items: center;        /* center contents horizontally */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color:rgba(240, 74, 74, 0.893);
+}
+
+.language-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-box img {
+    max-width: 64px;            /* constrain logo size */
+    max-height: 64px;
+    margin-bottom: 0.75rem;
+}
+
+.language-box span {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+}
+
+/* --------------- EXPERIENCE FLEXBOX --------------- */
+
+/* Container that holds each “experience” box */
+.exp-flex {
+    display: flex;
+    flex-wrap: wrap;            /* wrap if the screen is narrow */
+    justify-content: center;    /* center items horizontally */
+    gap: 1.5rem;                /* space between boxes */
+    margin-top: 2rem;           /* separate from the <h2>EXPERIENCE</h2> */
+  }
+  
+  /* Each individual box inside Experience */
+  .exp-box {
+    flex: 0 1 80%;            /* base width ~300px, but shrink/grow as needed */
+    background-color: #ffffff;  
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Hover lift effect (optional) */
+  .exp-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .exp-box h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .exp-box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  .list{
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #555;
+     
+  }
+
+  li{
+    margin-bottom: 1rem;
+  }
+
+  .sixth {
+    background-color: aliceblue;
+    font-size: 20px;
+    display: grid;
+    place-items: start center;
+  
+    /* Let the section grow to fit its children */
+    height: auto;
+  
+    /* Only a small bottom padding so it doesn’t leave blank space */
+    padding: 40px 40px 40px 40px;
+  
+    text-align: center;
+    margin: 0 auto; /* no bottom margin here */
+  }
+  
+  .sixth h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* small gap below the heading */
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;  /* small gap under “CONTACT” */
+    margin-bottom: 0;  /* no extra bottom margin */
+  }
+  
+  .contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: opacity 0.2s;
+  }
+  
+  .contact-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+  
+  .contact-link:hover {
+    opacity: 0.8;
+  }
+  
+  /* -------------------
+     Footer
+     ------------------- */
+  
+  .footer {
+    background-color: rgba(255, 222, 222, 0.94);
+    font-size: 0.9rem;
+    display: grid;
+    place-items: center;
+    padding: 10px 0;
+    color: #555;
+    margin-top: 0; 
+    height:80px /* zero top margin so it sits flush */
+  }
+
+  
