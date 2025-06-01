@@ -53,55 +53,6 @@ h1 {
     text-align: left;
 }
 
-/* “About Me” */
-.second {
-    background-color: aliceblue;
-    font-size: 20px;
-    display: grid;               /* keep grid so place-items works */
-    place-items: start center; 
-    height: 200px; 
-    padding: 40px 40px 20px 40px;
-    text-align: center;
-    margin: 0 auto; 
-                 /* center if you ever constrain width */
-}
-
-/* “Skills” */
-.third {
-    background-color: rgba(255, 222, 222, 0.94);
-    font-size: 20px;
-    display: grid;               /* keep grid so place-items works */
-    place-items: start center; 
-    height: 450px; 
-    padding: 40px 40px 50px 40px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-/* “Experience” */
-.forth {
-    background-color: aliceblue;
-    font-size: 20px;
-    display: grid;               /* keep grid so place-items works */
-    place-items: start center; 
-    height: 700px; 
-    padding: 40px 40px 50px 40px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-/* “Education” */
-.fifth {
-    background-color: rgba(255, 222, 222, 0.94);
-    font-size: 20px;
-    display: grid;               /* keep grid so place-items works */
-    place-items: start center; 
-    height: 500px; 
-    padding: 40px 40px 50px 40px;
-    text-align: center;
-    margin: 0 auto;
-}
-
 
 /* Flexbox for “Skills” logos */
 .languages {
@@ -196,20 +147,80 @@ h1 {
     margin-bottom: 1rem;
   }
 
+/* “About Me” */
+.second {
+    background-color: aliceblue;
+    font-size: 20px;
+    display: grid;
+    place-items: start center;
+  
+    /* Instead of height: 200px; use a minimum of 200px */
+    min-height: 200px;
+  
+    padding: 40px 40px 20px 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* “Skills” */
+  .third {
+    background-color: rgba(255, 222, 222, 0.94);
+    font-size: 20px;
+    display: grid;
+    place-items: start center;
+  
+    /* Instead of height: 450px; use a minimum of 450px */
+    min-height: 450px;
+  
+    padding: 40px 40px 50px 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* “Experience” */
+  .forth {
+    background-color: aliceblue;
+    font-size: 20px;
+    display: grid;
+    place-items: start center;
+  
+    /* Instead of height: 700px; use a minimum of 700px */
+    min-height: 700px;
+  
+    padding: 40px 40px 50px 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* “Education” */
+  .fifth {
+    background-color: rgba(255, 222, 222, 0.94);
+    font-size: 20px;
+    display: grid;
+    place-items: start center;
+  
+    /* Instead of height: 500px; use a minimum of 500px */
+    min-height: 500px;
+  
+    padding: 40px 40px 50px 40px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  /* “Contact” */
   .sixth {
     background-color: aliceblue;
     font-size: 20px;
     display: grid;
     place-items: start center;
   
-    /* Let the section grow to fit its children */
-    height: auto;
+    /* Instead of height: 300px; use a minimum of 300px */
+    min-height: 200px;
+    
   
-    /* Only a small bottom padding so it doesn’t leave blank space */
-    padding: 40px 40px 40px 40px;
-  
+    padding: 40px 40px 10px 40px;
     text-align: center;
-    margin: 0 auto; /* no bottom margin here */
+    margin: 0 auto;
   }
   
   .sixth h2 {
